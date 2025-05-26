@@ -18,11 +18,27 @@ export default function EasterEgg() {
               Even silence saw us.
             </h3>
             <p className="italic leading-relaxed text-deep-charcoal mb-4">
-              "Pain and suffering are always inevitable for a large intelligence and a deep heart."
+              Dear swan, come towards my tree,
+              We shall enjoy ourselves with tea.
+              Begin the enchantment of lilies—
+              Oh my traveler, my love, my visitor.
+
+              Suit and dance beneath the tree,
+              Look thrice into the deep cloak of water lilies,
+              Brushed with pale love and mint.
+              Oh my visitor, my love, my traveler.
+
+              Feed yourself a basket of bread,
+              Milk and berries,
+              Spilled with fiery honey—
+              Dipped in sacrifice.
+
+              I have been waiting to hold your hands
+              For three lunars,
+              Like white nights from Fyodor
             </p>
             <p className="text-dusty-rose">
-              — Fyodor Dostoevsky, Crime and Punishment
-            </p>
+              — Fyodor Dostoevsky, White Nights            </p>
           </div>
         </DialogContent>
       </Dialog>
