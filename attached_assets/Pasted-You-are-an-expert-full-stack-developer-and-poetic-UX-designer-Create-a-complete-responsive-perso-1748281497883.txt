@@ -1,0 +1,82 @@
+You are an expert full-stack developer and poetic UX designer. Create a **complete, responsive personal website** with HTML, CSS, and JavaScript that expresses a deep emotional message, reflecting themes of intimacy, poetry, emotional pain, philosophical reflection, and sincerity without false hope.
+
+---
+
+**Purpose:**  
+This site is a gift to someone deeply cared for. It is not meant to manipulate or offer false hope, but to serve as a soft space for reflection, emotional check-in, and creative resonance.
+
+---
+
+**Name of Site:**  
+“In the Quiet Between Us”
+
+---
+
+**PAGE STRUCTURE AND FEATURES:**
+
+1. **Landing Page**
+   - Background: Subtle animated stars, candle flicker, or rain (CSS or SVG-based).
+   - Centered title: “In the Quiet Between Us” (Garamond or poetic serif font).
+   - Under it: A favorite quote or poetic line: _“I hope even silence speaks gently to you.”_
+   - Button: “Step Inside” (fades and transitions to main page).
+
+2. **Main Letter (Full-Page Scrollable)**
+   - Section that displays a heartfelt personal letter written in first person.
+   - The letter should reflect uncertainty about love due to past experiences, acknowledgment of emotional pain, deep care, and a desire to support her healing.
+   - Typography: Large serif, with generous line spacing. Soft background (warm beige or dark twilight gradient).
+   - Fade-in animation on scroll.
+   - End with a gentle sentence like: _“Even if we are only fragments, I’ll still remember your whole.”_
+
+3. **Poems Section**
+   - Title: “Words That Know You”
+   - First: A poem written by the site creator (use a placeholder poem).
+   - Below that: A carousel with 3-5 user-submitted poems written by the girl.
+   - Animate each poem with a typewriter effect.
+   - Option to switch poems with left/right arrows or swipe.
+
+4. **Emotional Check-In Feature**
+   - Display a prompt: “How are you feeling today?”
+   - Buttons or icons for feelings: [Empty], [Heavy], [Hopeful], [Angry], [Tender]
+   - On click: Show a matching quote from her poems or philosophy, and a gentle message from the site creator.
+   - Example:  
+     - If "Empty" is selected: _“Emptiness is not absence. It’s space, waiting to be filled.”_
+
+5. **Favorite Song Player**
+   - Embed her favorite song using an iframe (YouTube or Spotify player).
+   - Show a soft prompt above: _“You once said this song held you when nothing else could.”_
+
+6. **Easter Egg**
+   - Hidden clickable element (like a subtle dot, flower, or her poem word).
+   - When clicked, opens a modal or secret section:
+     - Line: “Even silence saw us.”
+     - Include a favorite line from _Crime and Punishment_ or a rare poem of hers.
+     - Optional: soft ambient audio background.
+
+7. **“What I Can’t Pretend” Section**
+   - Honest paragraph from creator expressing emotional limits:
+     - “I don’t know if I can call this love. But I know I want to care, without pretending. You matter. You always did.”
+
+8. **Visual & UX Design**
+   - Fonts: Garamond or Crimson Text for body, optional handwriting font for poems.
+   - Colors: Dusty rose, twilight blue, parchment beige.
+   - Layout: Use Flexbox or CSS Grid. Soft transitions between sections.
+   - Animation: Subtle parallax or scroll-fade for poem and letter.
+   - Entire site must be **mobile responsive**.
+
+9. **JavaScript Requirements**
+   - Emotional check-in interactivity.
+   - Poem carousel logic.
+   - Easter egg modal.
+   - Smooth scrolling between sections.
+
+10. **Extras (Optional)**
+   - Include a small symbolic icon in the footer (like a candle, feather, or flower).
+   - Footer text: _“This space will remain, no matter the silence between us.”_
+
+---
+
+Use placeholder content where needed, but structure everything so it's easy to replace later. Code must be clean, well-commented, and modular.
+
+Use only **vanilla JS**, **HTML**, and **CSS**. Avoid frameworks or external libraries except for Google Fonts and optional YouTube embed.
+
+This must be an emotionally immersive, visually graceful, and deeply reflective website.
