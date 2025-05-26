@@ -37,7 +37,7 @@ export default function LetterSection() {
             textAlign: 'justify'
           }}
         >
-          <p className="mb-8">My dearest friend,</p>
+          <p className="mb-8">Hey Devyaaa ! </p>
           
           <p className="mb-8">
             I find myself writing to you from a place I cannot fully name—somewhere between certainty and doubt, between caring deeply and protecting what remains fragile in both of us. There are words I want to say that feel too heavy, and others that feel too light for what exists in this quiet space between us.
@@ -56,7 +56,7 @@ export default function LetterSection() {
           </p>
           
           <p className="mb-8">
-            Whether we are meant to be lovers, friends, or something undefined that exists only between us, I want you to know: you are seen. Your pain is real and valid. Your joy, when it comes, illuminates everything around you. Your existence has mattered to me in ways I am still learning to understand.
+            Whether we are meant to be lovers or something undefined that exists only between us, I want you to know: you are seen. Your pain is real and valid. Your joy, when it comes, illuminates everything around you. Your existence has mattered to me in ways I am still learning to understand.
           </p>
           
           <div className="italic text-center text-dusty-rose mt-12"

@@ -12,16 +12,14 @@ export default function SongSection() {
             <iframe
               width="100%"
               height="315"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              src="https://www.youtube.com/embed/rIBWBrJzXU0"
               title="Your Favorite Song"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="rounded-xl"
             />
-            <p className="text-sm text-gray-600 mt-4 italic">
-              Replace with your favorite song embed URL
-            </p>
+          
           </div>
         </div>
       </div>
