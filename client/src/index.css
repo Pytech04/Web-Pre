@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 20 14.3% 4.1%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 14.3% 4.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 20 14.3% 4.1%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --primary: 207 90% 54%;
+  --primary-foreground: 211 100% 99%;
+  --secondary: 60 4.8% 95.9%;
+  --secondary-foreground: 24 9.8% 10%;
+  --accent: 60 4.8% 95.9%;
+  --accent-foreground: 24 9.8% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 20 14.3% 4.1%;
+  --radius: 0.5rem;
+  
+  /* Custom theme colors */
+  --dusty-rose: 0 20% 83%; /* #D4A5A5 */
+  --twilight-blue: 210 22% 22%; /* #2C3E50 */
+  --parchment-beige: 42 40% 96%; /* #F5F1E8 */
+  --soft-cream: 50 40% 98%; /* #FEFCF7 */
+  --deep-charcoal: 0 0% 17%; /* #2C2C2C */
+  --shadow-light: 0 20% 83%; /* rgba(212, 165, 165, 0.2) */
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 207 90% 54%;
+  --primary-foreground: 211 100% 99%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Crimson Text', serif;
+    line-height: 1.7;
+    color: hsl(var(--deep-charcoal));
+    background: hsl(var(--soft-cream));
+    overflow-x: hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom animations */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Custom utility classes */
+.font-serif {
+  font-family: 'Crimson Text', serif;
+}
+
+.font-script {
+  font-family: 'Dancing Script', cursive;
+}
+
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+.text-dusty-rose {
+  color: hsl(var(--dusty-rose));
+}
+
+.text-twilight-blue {
+  color: hsl(var(--twilight-blue));
+}
+
+.text-deep-charcoal {
+  color: hsl(var(--deep-charcoal));
+}
+
+.bg-dusty-rose {
+  background-color: hsl(var(--dusty-rose));
+}
+
+.bg-twilight-blue {
+  background-color: hsl(var(--twilight-blue));
+}
+
+.bg-parchment-beige {
+  background-color: hsl(var(--parchment-beige));
+}
+
+.bg-soft-cream {
+  background-color: hsl(var(--soft-cream));
+}
+
+.border-dusty-rose {
+  border-color: hsl(var(--dusty-rose));
+}
+
+.animate-twinkle {
+  animation: twinkle 3s infinite ease-in-out;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 2s ease-out forwards;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out;
+}
+
+.animate-modalSlideIn {
+  animation: modalSlideIn 0.5s ease;
+}
+
+.animate-typewriter {
+  animation: typewriter 3s steps(50) 1s both;
+}
+
+/* Gradient backgrounds */
+.gradient-landing {
+  background: linear-gradient(135deg, hsl(var(--twilight-blue)) 0%, hsl(var(--dusty-rose)) 100%);
+}
+
+.gradient-parchment {
+  background: linear-gradient(45deg, hsl(var(--parchment-beige)) 0%, hsl(var(--soft-cream)) 100%);
+}
+
+.gradient-dusty-parchment {
+  background: linear-gradient(135deg, hsl(var(--dusty-rose)) 0%, hsl(var(--parchment-beige)) 100%);
+}
+
+/* Backdrop blur utilities */
+.backdrop-blur-custom {
+  backdrop-filter: blur(10px);
+}
+
+/* Shadow utilities */
+.shadow-custom {
+  box-shadow: 0 10px 40px hsla(var(--shadow-light), 0.2);
+}
+
+.shadow-custom-strong {
+  box-shadow: 0 10px 30px hsla(var(--shadow-light), 0.3);
+}
+
+/* Text shadows */
+.text-shadow-light {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
